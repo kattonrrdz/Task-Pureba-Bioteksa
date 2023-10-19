@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba de Tareas Bioteksa</title>
+    <style>
+        .task-item {
+            margin-bottom: 10px;
+        }
+        .task-item label {
+            margin-right: 10px;
+        }
+        .task-item button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Administrador de tareas</h1>
+
+    <h2>Bienvenido usuario 1 agrege una tarea</h2>
+    <input type="text" id="taskTitle" placeholder="Título de la tarea">
+    <input type="text" id="taskDescription" placeholder="Descripción de la tarea">
+    <button onclick="addTask()">Add Task</button>
+
+    <h2>Tasks</h2>
+    <ul id="taskList"></ul>
+
+    <div id="editTaskForm" style="display: none;">
+        <h2>Edit Task</h2>
+        <input type="text" id="editTaskTitle" placeholder="Actualice el título">
+        <input type="text" id="editTaskDescription" placeholder="Actualice la descripción">
+        <input type="checkbox" id="editTaskCompleted"> Completed
+        <button onclick="saveEditedTask()">Save Changes</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
